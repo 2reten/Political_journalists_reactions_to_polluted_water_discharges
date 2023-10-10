@@ -468,6 +468,7 @@ py.plot(fig, filename='Conservative media by country', auto_open=True)
 ### 감성 분석
 - 원래는 머신러닝을 이용해서 만들고 싶었으나 일정의 조율을 실패해 머신러닝이 아닌 사전을 이용해서 코드를 작성했다.
 
+
 ```python
 dic1 = open("positive-words.txt")
 dic2 = open("negative-words.txt")
@@ -480,6 +481,20 @@ for line in dic2:
 ```
 
 - 먼저 긍정적인 단어 리스트와 부정적인 단어의 리스트를 만들었다.
+
+```python
+kcs_sentiment_firm = []
+sentiment = 0
+count = 0
+for token in kcs_nouns:
+    if token in positive_words:
+        sentiment += 1
+        count += 1
+    elif token in negative_words:
+        sentiment -= 1
+        count += 1
+kpr_sentiment_firm.append(sentiment/count)
+```
 
 ```python
 kcs_sentiment_firm = []
