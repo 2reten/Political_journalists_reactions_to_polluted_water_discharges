@@ -589,28 +589,7 @@ py.plot(fig, filename='Sentiment Score', auto_open=True)
 - 시각화 하는 과정에서 chart_studio를 사용한 이유는 ppt내에서 plotly의 장점을 사용하기 위해서 사용했다.
     - 만약 그 코드 내에서만 확인을 한다면 시각화 과정에서 chart_studio 부분의 코드는 반드시 하지 않아도 되는 부분이다.
 
-```python
-chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
-data = {
-    'Category': ['kor_cons', 'kor_pr', 'p_cons', 'jp_pr', 'cn_cons', 'rs_cons'],
-    'Positive': [5.30697190426639, 4.266389177939646, 5.30697190426639, 2.6014568158168574, 2.705515088449532, 6.659729448491156],
-    'Negative': [-26.84703433922997, -26.84703433922997, -12.278876170655566, -5.6191467221644125, -7.075962539021852, -7.075962539021852]
-}
 
-df_1 = pd.DataFrame(data)
-# 데이터프레임을 'melt' 함수를 사용하여 재구성합니다.
-df_melted = pd.melt(df_1, id_vars=['Category'], value_vars=['Positive', 'Negative'],
-                    var_name='Sentiment', value_name='Score')
-# 그래프 생성
-fig = px.bar(df_melted, x='Score', y='Category', orientation='h', color='Sentiment',
-             labels={'Score': 'Scores', 'Category': 'Category'}, title="Sentiment Score")
-# 그래프 스타일 및 레이아웃 설정
-fig.update_layout(xaxis=dict(range=[-30, 10]), xaxis_title="Scores", yaxis_title="Category",
-                  yaxis_categoryorder='total ascending', yaxis={'categoryarray': df_melted['Category'][::-1]})
-# 그래프 출력
-fig.show()
-py.plot(fig, filename='Sentiment Analysis_Bar', auto_open=True)
-```
 ```python
 chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
 fig = px.pie(df, names=df.columns, values=df.iloc[0], title='Sentiment Analysis')
@@ -698,3 +677,26 @@ fig.show()
 py.plot(fig, filename='Sentiment Analysis_pie', auto_open=True)
 ```
 - 마찬가지로 ppt에서 이용하기 위해 chart_studio로 저장했다.
+
+```python
+chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+data = {
+    'Category': ['kor_cons', 'kor_pr', 'p_cons', 'jp_pr', 'cn_cons', 'rs_cons'],
+    'Positive': [5.30697190426639, 4.266389177939646, 5.30697190426639, 2.6014568158168574, 2.705515088449532, 6.659729448491156],
+    'Negative': [-26.84703433922997, -26.84703433922997, -12.278876170655566, -5.6191467221644125, -7.075962539021852, -7.075962539021852]
+}
+
+df_1 = pd.DataFrame(data)
+# 데이터프레임을 'melt' 함수를 사용하여 재구성합니다.
+df_melted = pd.melt(df_1, id_vars=['Category'], value_vars=['Positive', 'Negative'],
+                    var_name='Sentiment', value_name='Score')
+# 그래프 생성
+fig = px.bar(df_melted, x='Score', y='Category', orientation='h', color='Sentiment',
+             labels={'Score': 'Scores', 'Category': 'Category'}, title="Sentiment Score")
+# 그래프 스타일 및 레이아웃 설정
+fig.update_layout(xaxis=dict(range=[-30, 10]), xaxis_title="Scores", yaxis_title="Category",
+                  yaxis_categoryorder='total ascending', yaxis={'categoryarray': df_melted['Category'][::-1]})
+# 그래프 출력
+fig.show()
+py.plot(fig, filename='Sentiment Analysis_Bar', auto_open=True)
+```
