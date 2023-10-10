@@ -700,3 +700,4 @@ fig.update_layout(xaxis=dict(range=[-30, 10]), xaxis_title="Scores", yaxis_title
 fig.show()
 py.plot(fig, filename='Sentiment Analysis_Bar', auto_open=True)
 ```
+- 데이터프레임으로 만들다가 실패해 따로 데이터값을 주고 melt를 이용해서 프레임을 재구성했다.
