@@ -371,6 +371,9 @@ rs_top30 = df_rs.head(30)
 rs_top30 = rs_top30.reset_index(drop=True)
 ```
 
+- a 에 지우고 싶은 단어를 넣어 저장하고 그 리스트에 없다면 출력하는 방식으로 바꿨지만 
+stop_words = set(stopwords.words("english"))를 입력해 각 단어 리스트에 [i for i in __ if not in stop_words]를 재정의해 불용어 처리를 할 수 있다.
+
 ### 한국과 일본 데이터 합치기
 
 ```python
