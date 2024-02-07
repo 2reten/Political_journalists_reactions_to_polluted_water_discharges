@@ -12,13 +12,13 @@
 
 **Project Table of Contents**
 - Data collection and scraping
-  - We scrape and collect articles from August 20 to September 27 from each media outlet.
+  - Scraping and collecting articles from each media outlet will be done from August 20 to September 27.
 - Translation
   - Translate the collected articles from Korean, Chinese, and Russian to English.
 - Stop words processing
   - Remove stopwords from the English-translated articles to minimize words that interfere with the analysis.
 - Scoring and sentiment analysis
-  - Assigns a score to each word in the text to generate a sentiment score indicating positive, negative, and neutral tone.
+  - Assign a score to each word in the text to generate sentiment indicating positive, negative, and neutral tones.
 - Visualize results
   - Visualize sentiment scores by media outlet to understand the nature of the sentiment they express on a topic.
 
@@ -44,7 +44,7 @@
 **Project progression**
 
 - Crawling process
-- 
+  
 ![ezgif com-crop](https://github.com/2reten/Vis_Project/assets/145303952/7f1f8978-8140-4c8f-b1f2-7b2aa4fe5f89)
 
 - Final result
