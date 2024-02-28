@@ -54,6 +54,19 @@
   </a>
 </div>
 
+- Both liberals and conservatives in South Korea expressed negative sentiment, but by a factor of two.
+  - Conservatives prefer to take a forward-looking direction in relations with Japan, which influences them to be passive or to disagree with liberals.
+  - Liberals tend to criticize foreign affairs.
+- Japan's progressives are more pacifist, which may explain their negative opinions about the contaminated water, while conservatives' negative feelings are likely due to internal factional conflicts.
+  - Japan's conservatives are currently divided into eight internal factions, highlighting internal conflicts rather than competition with progressives within Japan.
+  - It is speculated that the negative index is higher due to internal conflicts.
+
+- 대한민국의 진보 성향과 보수 성향은 모두 부정적인 감정을 나타냈지만 수치로는 2배 가량의 차이를 확인.
+  - 보수 성향은 일본과의 관계에서 미래 지향적인 방향으로 가는 것을 선호하기 때문에 소극적으로 대응하거나 진보의 의견에 부정하는 것에 영향.
+  - 진보 성향은  외교 문제 때문에 비판하는 경향.
+- 일본의 진보 성향은 평화주의적인 성향이 강해 오염수에 관해 부정적인 의견을 냈으나   보수 성향은 내부 계파의 갈등으로 인해 부정적인 감정이 나온 것으로 추측
+  - 일본의 보수 성향은 현재 8개의 내부 계파로 나뉘어 있으며 일본 내에서 진보와 경쟁을 하는 것이 아닌 내부 계파끼리의 갈등이 부각.
+  - 내부 갈등으로 인해 부정 지수가 더 오른 것으로 추측.
 
 ## 문제점과 한계
 **Issues and limitations**
